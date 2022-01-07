@@ -1,5 +1,10 @@
 /*
 ****************************
+**         COLORS         **
+****************************
+*/
+/*
+****************************
 **      QUICK RESETS      **
 ****************************
 */
@@ -24,9 +29,99 @@ h3 {
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  background-color: #f2f2f2;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-line-height: 26px;
+  font-color: #7b8bad;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
 /*
 ****************************
-**     MAIN CONTENT       **
+**     MOBILE STYLES      **
 ****************************
 */
+/**** MAIN-HEADER ****/
+.main-header,
+.hero,
+.sub-hero,
+.features,
+.main-footer {
+  padding: 24px;
+}
+
+/**** HERO ****/
+/**** BUTTONS ****/
+/**** SUB-HERO ****/
+/**** FEATURES ****/
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__card:nth-child(1) .features__image {
+  background-image: url("../assets/shared/icon-compatible.svg");
+}
+
+.features__card:nth-child(2) .features__image {
+  background-image: url("../assets/shared/icon-bluetooth.svg");
+}
+
+.features__card:nth-child(3) .features__image {
+  background-image: url("../assets/shared/icon-battery.svg");
+}
+
+.features__card:nth-child(4) .features__image {
+  background-image: url("../assets/shared/icon-light.svg");
+}
+
+.features__image {
+  background-color: #f16718;
+  height: 65px;
+  width: 65px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/**** FOOTER ****/
+.main-footer {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

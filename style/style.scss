@@ -1,5 +1,18 @@
 /*
 ****************************
+**         COLORS         **
+****************************
+*/
+
+$orange: #f16718;
+$light-orange: #ff9b62;
+$dark-blue: #162542;
+$blue: #7b8bad;
+$light-blue: #e8eff2;
+$white: #fff;
+
+/*
+****************************
 **      QUICK RESETS      **
 ****************************
 */
@@ -24,8 +37,103 @@ h3 {
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  background-color: #f2f2f2;
+  font: {
+    family: "Barlow", sans-serif;
+    weight: 500;
+    size: 16px;
+    line-height: 26px;
+    color: $blue;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+  background-color: $white;
+  display: grid;
+  grid-template-columns: auto; // default - change for tablet etc.
+  grid-template-rows: auto;
+}
+
 /*
 ****************************
-**     MAIN CONTENT       **
+**     MOBILE STYLES      **
 ****************************
 */
+
+/**** MAIN-HEADER ****/
+.main-header,
+.hero,
+.sub-hero,
+.features,
+.main-footer {
+  padding: 24px;
+}
+
+.main-header {
+  //
+}
+
+/**** HERO ****/
+.hero {
+  //
+}
+
+/**** BUTTONS ****/
+.btn {
+  //
+}
+
+.btn-light {
+}
+
+/**** SUB-HERO ****/
+.sub-hero {
+  //
+}
+
+/**** FEATURES ****/
+.features {
+  display: flex;
+  flex-direction: column;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(1) .features__image {
+      background-image: url("../assets/shared/icon-compatible.svg");
+    }
+
+    &:nth-child(2) .features__image {
+      background-image: url("../assets/shared/icon-bluetooth.svg");
+    }
+
+    &:nth-child(3) .features__image {
+      background-image: url("../assets/shared/icon-battery.svg");
+    }
+
+    &:nth-child(4) .features__image {
+      background-image: url("../assets/shared/icon-light.svg");
+    }
+  }
+
+  &__image {
+    background-color: $orange;
+    height: 65px;
+    width: 65px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/**** FOOTER ****/
+.main-footer {
+  text-align: center;
+}

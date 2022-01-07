@@ -27,16 +27,23 @@ h2,
 h3 {
   margin: 0;
   padding: 0;
+  color: #162542;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
 }
 
 body {
   height: 100vh;
   background-color: #f2f2f2;
+  color: #7b8bad;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   font-size: 16px;
   font-line-height: 26px;
-  font-color: #7b8bad;
 }
 
 .container {
@@ -62,11 +69,52 @@ body {
 .sub-hero,
 .features,
 .main-footer {
-  padding: 24px;
+  padding: 0 24px;
+  border: 1px solid goldenrod;
+}
+
+.main-header {
+  padding-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 48px;
+  min-width: 327px;
+  border: unset;
 }
 
 /**** HERO ****/
+.hero {
+  margin-top: 64px;
+}
+
+.hero__header {
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.hero__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__image {
+  margin-top: 64px;
+  min-height: 331px;
+  background-image: url("../assets/mobile/image-keyboard.jpg");
+  background-size: cover;
+}
+
 /**** BUTTONS ****/
+.btn {
+  font-weight: 700;
+}
+
 /**** SUB-HERO ****/
 /**** FEATURES ****/
 .features {

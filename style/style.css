@@ -65,11 +65,9 @@ body {
 */
 /**** MAIN-HEADER ****/
 .main-header,
-.sub-hero,
 .features,
 .main-footer {
   padding: 0 24px;
-  border: 1px solid goldenrod;
 }
 
 .main-header {
@@ -124,9 +122,7 @@ body {
 
 .hero__image {
   margin-top: 64px;
-  min-height: 331px;
   padding-right: 0;
-  background-image: url("../assets/mobile/image-keyboard.jpg");
   background-size: cover;
   border-radius: 24px;
 }
@@ -161,8 +157,45 @@ body {
 }
 
 /**** SUB-HERO ****/
+.sub-hero__images {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: red;
+}
+
+.sub-hero__image-1 {
+  min-height: 193px;
+  background-image: url("../assets/mobile/image-keyboard.jpg");
+}
+
+.sub-hero__image-2 {
+  min-height: 193px;
+  background-image: url("../assets/mobile/image-glass-and-keyboard.jpg");
+}
+
+.sub-hero__header {
+  padding: 75px 60px 0 60px;
+  padding-top: 75px;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sub-hero__body {
+  text-align: center;
+  padding: 24px;
+}
+
 /**** FEATURES ****/
 .features {
+  padding-top: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +219,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 64px;
 }
 
 .features__card:nth-child(1) .features__image {
@@ -213,8 +247,27 @@ body {
   background-position: center;
 }
 
+.features__header {
+  padding-top: 48px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.features__body {
+  padding-top: 24px;
+  text-align: center;
+}
+
 /**** FOOTER ****/
 .main-footer {
+  padding-top: 96px;
+  padding-bottom: 50px;
   text-align: center;
+}
+
+.typemaster {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

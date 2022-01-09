@@ -287,9 +287,6 @@ pre {
 ***********************************/
 
 @media screen and (min-width: 768px) {
-  .container {
-  }
-
   .main-header {
     padding: 40px 40px 0 40px;
   }
@@ -411,32 +408,43 @@ pre {
   }
 }
 
+.main-footer {
+  padding-top: 142px;
+}
+
 /***********************************
 ********** DESKTOP STYLE ***********
 ***********************************/
 
 @media screen and (min-width: 1210px) {
-  .container {
-  }
-
-  .main-header {
+  .main-header,
+  .hero,
+  .sub-hero {
     padding-left: 165px;
     padding-right: 165px;
   }
 
   .hero {
-    padding-left: 165px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
   }
 
   .hero__wrapper {
-    border: 2px solid goldenrod;
+    //width: 570px;
   }
 
   .hero__body {
   }
 
   .hero__image {
-    border: 2px solid red;
+    height: 480px;
+    width: 540px;
+    background-image: url("../assets/desktop/image-keyboard.jpg");
+    border-radius: 24px;
+  }
+
+  .sub-hero {
+    //
   }
 
   .features {
@@ -450,5 +458,9 @@ pre {
 
   .features__card {
     max-width: 255px;
+  }
+
+  .main-footer {
+    padding-top: 128px;
   }
 }

@@ -425,22 +425,32 @@ pre {
   }
 }
 
+.main-footer {
+  padding-top: 142px;
+}
+
 /***********************************
 ********** DESKTOP STYLE ***********
 ***********************************/
 @media screen and (min-width: 1210px) {
-  .main-header {
+  .main-header,
+  .hero,
+  .sub-hero {
     padding-left: 165px;
     padding-right: 165px;
   }
   .hero {
-    padding-left: 165px;
-  }
-  .hero__wrapper {
-    border: 2px solid goldenrod;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .hero__image {
-    border: 2px solid red;
+    height: 480px;
+    width: 540px;
+    background-image: url("../assets/desktop/image-keyboard.jpg");
+    border-radius: 24px;
   }
   .features {
     margin-inline: auto;
@@ -451,6 +461,9 @@ pre {
   }
   .features__card {
     max-width: 255px;
+  }
+  .main-footer {
+    padding-top: 128px;
   }
 }
 /*# sourceMappingURL=style.css.map */

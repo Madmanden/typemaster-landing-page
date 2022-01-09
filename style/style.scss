@@ -70,6 +70,8 @@ body {
 ****************************
 */
 
+/////////////////////////// FIX IMAGES!!! ////////////////////////////
+
 /**** MAIN-HEADER ****/
 .main-header,
 .features,
@@ -301,6 +303,7 @@ pre {
     margin-top: 62px;
 
     &__wrapper {
+      max-width: 445px;
       grid-area: wrapper;
     }
 
@@ -309,11 +312,11 @@ pre {
 
     &__body {
       max-width: 339px;
-      padding-right: 0;
     }
 
     &__footer {
-      padding-right: 70px;
+      justify-content: flex-start;
+      gap: 37px;
     }
 
     &__image {
@@ -321,6 +324,7 @@ pre {
       margin: 0;
       height: 425px;
       width: 478px;
+      background-image: url("../assets/tablet/image-keyboard.jpg");
     }
   }
 
@@ -348,11 +352,13 @@ pre {
     }
 
     &__image-1 {
+      background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
       border-radius: 24px;
       max-width: 214px;
     }
 
     &__image-2 {
+      background-image: url("../assets/mobile/image-glass-and-keyboard.jpg");
       margin: 0;
       width: 445px;
       min-height: 320px;
@@ -414,7 +420,23 @@ pre {
   }
 
   .main-header {
-    //
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
+  .hero {
+    padding-left: 165px;
+  }
+
+  .hero__wrapper {
+    border: 2px solid goldenrod;
+  }
+
+  .hero__body {
+  }
+
+  .hero__image {
+    border: 2px solid red;
   }
 
   .features {

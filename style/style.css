@@ -314,16 +314,19 @@ pre {
     margin-top: 62px;
   }
   .hero__wrapper {
+    max-width: 445px;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: wrapper;
   }
   .hero__body {
     max-width: 339px;
-    padding-right: 0;
   }
   .hero__footer {
-    padding-right: 70px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 37px;
   }
   .hero__image {
     -ms-grid-row: 1;
@@ -332,6 +335,7 @@ pre {
     margin: 0;
     height: 425px;
     width: 478px;
+    background-image: url("../assets/tablet/image-keyboard.jpg");
   }
   .btn {
     height: 58px;
@@ -362,10 +366,12 @@ pre {
     padding-top: 0;
   }
   .sub-hero__image-1 {
+    background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
     border-radius: 24px;
     max-width: 214px;
   }
   .sub-hero__image-2 {
+    background-image: url("../assets/mobile/image-glass-and-keyboard.jpg");
     margin: 0;
     width: 445px;
     min-height: 320px;
@@ -423,6 +429,19 @@ pre {
 ********** DESKTOP STYLE ***********
 ***********************************/
 @media screen and (min-width: 1210px) {
+  .main-header {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+  .hero {
+    padding-left: 165px;
+  }
+  .hero__wrapper {
+    border: 2px solid goldenrod;
+  }
+  .hero__image {
+    border: 2px solid red;
+  }
   .features {
     margin-inline: auto;
     width: 1106px;

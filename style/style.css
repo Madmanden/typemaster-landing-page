@@ -48,14 +48,10 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 375px;
+  max-width: 1440px;
   background-color: #fff;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
 }
 
 /*
@@ -123,6 +119,7 @@ body {
 .hero__image {
   margin-top: 64px;
   min-height: 331px;
+  max-height: 425px;
   padding-right: 0;
   background-image: url("../assets/mobile/image-keyboard.jpg");
   background-size: cover;
@@ -217,6 +214,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-inline: auto;
 }
 
 .features__card {
@@ -234,6 +232,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 64px;
+  max-width: 400px;
 }
 
 .features__card:nth-child(1) .features__image {
@@ -293,5 +292,146 @@ pre {
   padding: 0;
   font-family: Barlow;
   font-size: 16px;
+}
+
+/***********************************
+*********** TABLET STYLE ***********
+***********************************/
+@media screen and (min-width: 768px) {
+  .main-header {
+    padding: 40px 40px 0 40px;
+  }
+  .hero {
+    padding-left: 40px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 321px;
+        grid-template-columns: auto 321px;
+        grid-template-areas: "wrapper image";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 62px;
+  }
+  .hero__wrapper {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: wrapper;
+  }
+  .hero__body {
+    max-width: 339px;
+    padding-right: 0;
+  }
+  .hero__footer {
+    padding-right: 70px;
+  }
+  .hero__image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: image;
+    margin: 0;
+    height: 425px;
+    width: 478px;
+  }
+  .btn {
+    height: 58px;
+    padding: 16px 27px;
+  }
+  .sub-hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "images images" "header body";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px 40px 0 40px;
+  }
+  .sub-hero__images {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: images;
+    height: 100%;
+    padding-top: 0;
+  }
+  .sub-hero__image-1 {
+    border-radius: 24px;
+    max-width: 214px;
+  }
+  .sub-hero__image-2 {
+    margin: 0;
+    width: 445px;
+    min-height: 320px;
+  }
+  .sub-hero__header {
+    height: 100%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: header;
+    max-width: 255px;
+    padding: 0;
+    padding-top: 72px;
+    text-align: left;
+  }
+  .sub-hero__body {
+    height: 100%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: body;
+    max-width: 398px;
+    text-align: left;
+    padding: 0;
+    padding-top: 87px;
+  }
+  .features {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    grid-column-gap: 11px;
+  }
+  .features__header {
+    padding-left: 0;
+    max-width: 250px;
+    text-align: left;
+  }
+  .features__body {
+    text-align: left;
+    max-width: 281px;
+  }
+  .features__card {
+    width: 339px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+/***********************************
+********** DESKTOP STYLE ***********
+***********************************/
+@media screen and (min-width: 1210px) {
+  .features {
+    margin-inline: auto;
+    width: 1106px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+  .features__card {
+    max-width: 255px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

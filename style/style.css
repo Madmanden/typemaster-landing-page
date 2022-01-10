@@ -88,6 +88,10 @@ body {
   padding-left: 24px;
 }
 
+.hero__wrapper {
+  max-width: 445px;
+}
+
 .hero__header {
   padding-right: 24px;
   font-size: 48px;
@@ -119,6 +123,7 @@ body {
 .hero__image {
   margin-top: 64px;
   min-height: 331px;
+  max-height: 100%;
   max-height: 425px;
   padding-right: 0;
   background-image: url("../assets/mobile/image-keyboard.jpg");
@@ -173,7 +178,7 @@ body {
 }
 
 .sub-hero__image-1 {
-  width: calc(100% - 233px);
+  width: calc(100% - 269px);
   background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
   background-size: cover;
   background-color: #f16718;
@@ -202,6 +207,7 @@ body {
 .sub-hero__body {
   text-align: center;
   padding: 24px;
+  padding-bottom: 14px;
 }
 
 /**** FEATURES ****/
@@ -314,13 +320,9 @@ pre {
     margin-top: 62px;
   }
   .hero__wrapper {
-    max-width: 445px;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: wrapper;
-  }
-  .hero__body {
-    max-width: 339px;
   }
   .hero__footer {
     -webkit-box-pack: start;

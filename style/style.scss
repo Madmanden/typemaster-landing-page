@@ -13,14 +13,26 @@ $white: #fff;
 
 /*
 ****************************
+**     OTHER VARIABLES    **
+****************************
+*/
+
+$border-radius: 20px;
+$padding-mobile: 24px;
+$padding-tablet: 40px;
+$padding-desktop: 165px;
+
+/*
+****************************
 **      QUICK RESETS      **
 ****************************
 */
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
+  //border: 1px solid goldenrod;
 }
 
 html,
@@ -46,90 +58,15 @@ h3 {
 
 body {
   height: 100vh;
+  max-width: 1440px;
   background-color: #f2f2f2;
   line-height: 26px;
   color: $blue;
 
   font: {
-    family: "Barlow", sans-serif;
+    family: Barlow, sans-serif;
     weight: 500;
     size: 16px;
-  }
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1440px;
-  background-color: $white;
-  display: grid;
-}
-
-/*
-****************************
-**     MOBILE STYLES      **
-****************************
-*/
-
-/////////////////////////// FIX IMAGES!!! ////////////////////////////
-
-/**** MAIN-HEADER ****/
-.main-header,
-.features,
-.main-footer {
-  padding: 0 24px;
-}
-
-.main-header {
-  padding-top: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 48px;
-  min-width: 327px;
-  border: unset; // remove this after removing it on every element above
-}
-
-/**** HERO ****/
-.hero {
-  margin-top: 64px;
-  padding-left: 24px;
-
-  &__wrapper {
-    max-width: 445px; //??
-  }
-
-  &__header {
-    padding-right: 24px;
-    font-size: 48px;
-    line-height: 48px;
-    text-transform: uppercase;
-  }
-
-  &__body {
-    padding-right: 24px;
-    padding-top: 32px;
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 32px;
-    padding-right: 41px;
-    text-transform: uppercase;
-    align-items: center;
-    font-weight: 700;
-  }
-
-  &__image {
-    margin-top: 64px;
-    min-height: 331px;
-    max-height: 100%;
-    max-height: 425px;
-    padding-right: 0;
-    background-image: url("../assets/mobile/image-keyboard.jpg");
-    background-size: cover;
-    border-top-left-radius: 24px; // Is it 24px?
-    border-bottom-left-radius: 24px;
   }
 }
 
@@ -149,6 +86,7 @@ body {
 .btn:focus {
   cursor: pointer;
   background-color: $light-orange;
+  transition: color 100ms, background-color 100ms;
 }
 
 .btn--light {
@@ -162,37 +100,111 @@ body {
   color: $white;
 }
 
-/**** SUB-HERO ****/
-.sub-hero {
-  //max-width: 375px;
+/*
+****************************
+**     MOBILE STYLES      **
+****************************
+*/
 
-  &__images {
-    padding: 0;
-    margin: 0;
-    padding-top: 24px;
+/**** HEADER ****/
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-mobile;
+}
+
+/**** HERO ****/
+.hero {
+  margin-top: 64px;
+  padding: $padding-mobile;
+  padding-bottom: 0;
+
+  &__wrapper {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__header {
+    padding-right: 24px;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    padding-right: 24px;
+    padding-top: 32px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+    padding-top: 32px;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  &__image {
+    margin-top: 64px;
+    width: calc(100% + 32px);
+    aspect-ratio: 1.125;
+    background: url("../assets/mobile/image-keyboard.jpg") no-repeat;
+    background-size: cover;
+    border-radius: $border-radius;
+  }
+}
+
+/**** DESCRIPTION ****/
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-mobile;
+
+  &__image-wrapper {
     width: 100%;
-    height: 193px;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     gap: 24px;
+    padding-top: 24px;
   }
 
   &__image-1 {
-    width: calc(100% - 269px); //233px
+    position: relative;
+    flex-grow: 1;
+    height: 50vw;
     background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
+    //background-repeat: no-repeat;
     background-size: cover;
     background-color: #f16718;
     background-blend-mode: multiply;
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
   }
 
   &__image-2 {
-    border-radius: 24px;
-    margin-right: 24px;
-    width: 220px;
+    flex-grow: 2;
+    height: 50vw;
     background-image: url("../assets/mobile/image-glass-and-keyboard.jpg");
     background-size: cover;
+    border-radius: $border-radius;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   &__header {
@@ -201,31 +213,29 @@ body {
     font-size: 32px;
     line-height: 36px;
     text-transform: uppercase;
-    text-align: center;
   }
 
   &__body {
-    text-align: center;
-    padding: 24px;
-    padding-bottom: 14px; // to get to 111px total
+    padding-top: 24px;
   }
 }
 
 /**** FEATURES ****/
 .features {
+  padding: $padding-mobile;
   padding-top: 47px; // 111px total - 64px padding-top on the image
   display: flex;
   flex-direction: column;
-  //justify-content: center;
-  margin-inline: auto;
 
   &__card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     padding-top: 64px;
-    max-width: 400px;
+    //max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 
     &:nth-child(1) .features__image {
       background-image: url("../assets/shared/icon-compatible.svg");
@@ -293,106 +303,90 @@ pre {
 ***********************************/
 
 @media screen and (min-width: 768px) {
-  .main-header {
-    padding: 40px 40px 0 40px;
-  }
-
-  .hero {
-    padding-left: 40px;
-    display: grid;
-    grid-template-columns: auto 321px;
-    grid-template-areas: "wrapper image";
-    align-items: center;
-    margin-top: 62px;
-
-    &__wrapper {
-      //max-width: 445px;
-      grid-area: wrapper;
-    }
-
-    &__header {
-    }
-
-    &__body {
-      //max-width: 339px;
-    }
-
-    &__footer {
-      justify-content: flex-start;
-      gap: 37px;
-    }
-
-    &__image {
-      grid-area: image;
-      margin: 0;
-      height: 425px;
-      width: 478px;
-      background-image: url("../assets/tablet/image-keyboard.jpg");
-    }
-  }
-
   .btn {
     height: 58px;
     padding: 16px 27px;
   }
 
-  .sub-hero {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-      "images images"
-      "header body";
-    align-items: center;
+  .nav-bar {
+    padding: $padding-tablet;
+    padding-bottom: 0;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 40px 40px 0 40px;
-
-    &__images {
-      grid-area: images;
-      height: 100%;
-      padding-top: 0;
-      //justify-content: space-between;
-    }
-
-    &__image-1 {
-      background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
-      border-radius: 24px;
-      //max-width: 214px;
-    }
-
-    &__image-2 {
-      background-image: url("../assets/mobile/image-glass-and-keyboard.jpg");
-      margin: 0;
-      width: 445px;
-      min-height: 320px;
-    }
+    align-items: center;
+    margin-top: 0;
+    padding: 62px 0 0 40px;
+    //overflow-x: hidden;
 
     &__header {
-      height: 100%;
-      grid-area: header;
-      max-width: 255px;
-      padding: 0;
-      padding-top: 72px;
-      text-align: left;
+      padding-right: 0;
+      max-width: 400px;
     }
 
     &__body {
-      height: 100%;
-      grid-area: body;
-      max-width: 398px;
-      text-align: left;
-      padding: 0;
-      padding-top: 87px;
+      padding-right: 69px;
+      //max-width: 340px;
     }
   }
 
+  .hero__wrapper {
+    min-width: 408px;
+  }
+
+  .hero__image {
+    height: 425px;
+    max-width: 478px;
+    margin-top: 0;
+    margin-right: $padding-tablet;
+    background-image: url("../assets/tablet/image-keyboard.jpg");
+  }
+
+  /// DESCRIPTION ///
+  .description {
+    padding-top: 24px; // Visual estimate
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+
+    &__image-1 {
+      height: 320px;
+      border-radius: $border-radius;
+      border-radius: $border-radius;
+    }
+
+    &__image-2 {
+      height: 320px;
+    }
+
+    &__wrapper {
+      padding-right: $padding-tablet;
+      flex-direction: row;
+      text-align: left;
+    }
+
+    &__header,
+    &__body {
+      padding: 0;
+      padding-top: 72px;
+    }
+
+    &__header {
+      padding-right: 100px; // Visual estimate
+    }
+  }
+
+  /// FEATURES ///
   .features {
-    //max-width: 1220px;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     align-items: flex-start;
     grid-column-gap: 11px;
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
 
     &__header {
       padding-left: 0;
@@ -402,100 +396,89 @@ pre {
 
     &__body {
       text-align: left;
-      max-width: 281px;
+      //width: 281px;
+      //max-width: 400px;
+      padding-right: $padding-tablet;
     }
   }
 
   .features__card {
-    width: 339px;
+    //width: 339px;
     //max-width: 255px;
     //justify-content: start;
     align-items: flex-start;
   }
-}
 
-.main-footer {
-  padding-top: 142px;
+  .main-footer {
+    padding-top: 142px;
+  }
 }
 
 /***********************************
 ********** DESKTOP STYLE ***********
 ***********************************/
 
-@media screen and (min-width: 1210px) {
-  .main-header,
-  .hero,
-  .sub-hero {
-    padding-left: 165px;
-    padding-right: 165px;
+@media (min-width: 1120px) {
+  body {
+    max-width: 1110px;
+    margin: auto;
+  }
+
+  .nav-bar {
+    padding-inline: 0;
   }
 
   .hero {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    padding-inline: 0;
+
+    &__image {
+      margin-right: 0;
+    }
   }
 
-  .hero__wrapper {
-    //width: 570px;
-  }
+  .description {
+    padding-inline: 0;
+    flex-direction: row;
 
-  .hero__body {
-  }
-
-  .hero__image {
-    height: 480px;
-    width: 540px;
-    background-image: url("../assets/desktop/image-keyboard.jpg");
-    border-radius: 24px;
-    max-height: unset;
-  }
-
-  .sub-hero {
-    grid-template-columns: auto auto auto;
-    grid-template-areas: "images images sub-wrapper";
-
-    &__wrapper {
-      grid-area: sub-wrapper;
-      padding-left: 125px;
+    &__image-wrapper {
+      width: 66%;
     }
 
-    &__images {
-      width: 730px;
+    &__image-1,
+    &__image-2 {
       height: 480px;
     }
 
-    &__image-1 {
-      background-image: url("../assets/desktop/image-phone-and-keyboard.jpg");
-      width: 255px;
-      //max-width: unset;
-    }
-
-    &__image-2 {
-      background-image: url("../assets/desktop/image-glass-and-keyboard.jpg");
-      width: 445px;
+    &__wrapper {
+      width: 34%;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 125px; // ??
+      padding-right: 0;
     }
 
     &__header {
-      padding-top: 0;
+      margin: 0;
+      padding: 0;
     }
 
     &__body {
+      margin: 0;
+      padding: 0;
       padding-top: 27px;
-      width: 255px;
     }
   }
 
   .features {
-    margin-inline: auto;
-    width: 1106px;
-    //padding-left: 167px;
-    //padding-right: 167px;
+    padding-inline: 0;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
-  }
+    padding-bottom: 0;
 
-  .features__card {
-    max-width: 255px;
+    &__body {
+      padding-right: 0;
+    }
   }
 
   .main-footer {

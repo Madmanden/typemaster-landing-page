@@ -466,6 +466,7 @@ pre {
 
     &__image-wrapper {
       width: 66%;
+      padding-top: 6px;
     }
 
     &__image-1,
@@ -505,6 +506,7 @@ pre {
 
   .features {
     padding-inline: 0;
+    padding-top: 64px;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;

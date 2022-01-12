@@ -499,6 +499,7 @@ pre {
   }
   .description__image-wrapper {
     width: 66%;
+    padding-top: 6px;
   }
   .description__image-1, .description__image-2 {
     height: 480px;
@@ -535,6 +536,7 @@ pre {
   }
   .features {
     padding-inline: 0;
+    padding-top: 64px;
     width: 100%;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);

@@ -478,6 +478,7 @@ pre {
   }
   .hero__image {
     margin-right: 0;
+    height: 480px;
   }
   .hero__grey-box {
     position: relative;

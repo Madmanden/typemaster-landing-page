@@ -325,7 +325,6 @@ pre {
     align-items: center;
     margin-top: 0;
     padding: 62px 0 0 40px;
-    //overflow-x: hidden;
 
     &__header {
       padding-right: 0;
@@ -334,7 +333,6 @@ pre {
 
     &__body {
       padding-right: 69px;
-      //max-width: 340px;
     }
   }
 
@@ -352,7 +350,7 @@ pre {
 
   /// DESCRIPTION ///
   .description {
-    padding-top: 24px; // Visual estimate
+    padding-top: 24px;
     padding-left: $padding-tablet;
     padding-right: $padding-tablet;
 
@@ -379,8 +377,7 @@ pre {
     }
 
     &__header {
-      padding-right: 100px; // Visual estimate
-    }
+      padding-right: 100px;
   }
 
   /// FEATURES ///
@@ -401,8 +398,6 @@ pre {
 
     &__body {
       text-align: left;
-      //width: 281px;
-      //max-width: 400px;
       padding-right: $padding-tablet;
     }
   }

@@ -510,6 +510,9 @@ pre {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .description__wrapper {
+    padding-top: 5px;
+  }
   .description__image-wrapper {
     width: 66%;
     padding-top: 6px;

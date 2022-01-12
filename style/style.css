@@ -460,6 +460,7 @@ pre {
     margin: auto;
   }
   .nav-bar {
+    padding-top: 55px;
     padding-inline: 0;
   }
   .hero {

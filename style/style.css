@@ -468,6 +468,14 @@ pre {
   .hero__image {
     margin-right: 0;
   }
+  .hero__grey-box {
+    position: absolute;
+    right: 0px;
+    height: 240px;
+    width: 135px;
+    background-color: #e8eff2;
+    border-radius: 20px 0 0 20px;
+  }
   .description {
     padding-inline: 0;
     -webkit-box-orient: horizontal;
@@ -480,6 +488,15 @@ pre {
   }
   .description__image-1, .description__image-2 {
     height: 480px;
+  }
+  .description__grey-box {
+    position: absolute;
+    left: -165px;
+    bottom: 0;
+    height: 240px;
+    width: 135px;
+    background-color: #e8eff2;
+    border-radius: 0 20px 20px 0;
   }
   .description__wrapper {
     width: 34%;

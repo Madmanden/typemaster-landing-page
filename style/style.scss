@@ -447,6 +447,8 @@ pre {
     &__body {
       font-size: 18px;
       line-height: 26px;
+      max-width: 445px;
+      padding-right: 0;
     }
 
     &__image {

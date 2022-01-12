@@ -482,6 +482,8 @@ pre {
   .hero__body {
     font-size: 18px;
     line-height: 26px;
+    max-width: 445px;
+    padding-right: 0;
   }
   .hero__image {
     margin-right: 0;

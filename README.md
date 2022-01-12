@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/typemaster-landing-page-with-bem-scss-flexbox-and-grid-GnUcgK2T8](https://www.frontendmentor.io/solutions/typemaster-landing-page-with-bem-scss-flexbox-and-grid-GnUcgK2T8)
 - Live Site URL: [https://madmanden.github.io/typemaster-landing-page/](https://madmanden.github.io/typemaster-landing-page/)
 
 ## My process

@@ -55,6 +55,7 @@ body {
 /**** BUTTONS ****/
 .btn {
   font-weight: 700;
+  font-size: 16px;
   background-color: #f16718;
   height: 48px;
   padding: 11px 15px;
@@ -464,6 +465,7 @@ pre {
     padding-inline: 0;
   }
   .hero {
+    padding-top: 83px;
     padding-inline: 0;
   }
   .hero__image {

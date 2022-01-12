@@ -32,7 +32,6 @@ $padding-desktop: 165px;
 *::before,
 *::after {
   box-sizing: border-box;
-  //border: 1px solid goldenrod;
 }
 
 html,
@@ -73,6 +72,7 @@ body {
 /**** BUTTONS ****/
 .btn {
   font-weight: 700;
+  font-size: 16px;
   background-color: $orange;
   height: 48px;
   padding: 11px 15px;
@@ -430,6 +430,7 @@ pre {
   }
 
   .hero {
+    padding-top: 83px;
     padding-inline: 0;
 
     &__image {

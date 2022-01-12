@@ -4,16 +4,14 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 ## Table of contents
 
-- [Frontend Mentor - Typemaster pre-launch landing page solution](#frontend-mentor---typemaster-pre-launch-landing-page-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-  - [Author](#author)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
 ## Overview
 
@@ -50,6 +48,7 @@ I used a bit of CSS grid in this challenge. I look forward to using it more. Fle
 ## Author
 
 - GitHub - [Madmanden](https://github.com/Madmanden)
+- Twitter - [Madmanden](https://twitter.com/Madmanden)
 - Website - [Christian Holm](https://www.christianholm.dev)
 - FrontendMentor - [@Madmanden](https://www.frontendmentor.io/profile/Madmanden)
-- Blog [Blog](https://hashnode.com/@christianholm)
+- Blog - [Blog](https://hashnode.com/@christianholm)

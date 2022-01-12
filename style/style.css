@@ -513,6 +513,7 @@ pre {
   .description__image-wrapper {
     width: 66%;
     padding-top: 6px;
+    gap: 30px;
   }
   .description__image-1, .description__image-2 {
     height: 480px;

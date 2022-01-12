@@ -485,6 +485,9 @@ pre {
     max-width: 445px;
     padding-right: 0;
   }
+  .hero__footer {
+    gap: 40px;
+  }
   .hero__image {
     margin-right: 0;
     height: 480px;

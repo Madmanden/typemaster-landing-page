@@ -153,7 +153,7 @@ body {
 
   &__image {
     margin-top: 64px;
-    width: calc(100% + 32px);
+    width: 100%;
     aspect-ratio: 1.125;
     background: url("../assets/mobile/image-keyboard.jpg") no-repeat;
     background-size: cover;

@@ -45,6 +45,10 @@ Users should be able to:
 
 I used a bit of CSS grid in this challenge. I look forward to using it more. Flexbox and grid is a powerful combination. Personally I'm glad the days of table layout are gone :)
 
+I also found out that it would be beneficial to seperate mobile, tablet and desktop views into different files. I sometimes thought I was updating the desktop media query, but was instead doing it on mobile. Different files would help mitigate that risk. In the same way, it would be helpful to have a live server view of both desktop and mobile at the same time, in case you break something you didn't intend.
+
+Lastly, I really need to learn better commit practices. Especially naming commits. It's so easy to jump all around the code base and "fixing" things, then commit everything into one big non-descript pile.
+
 ## Author
 
 - GitHub - [Madmanden](https://github.com/Madmanden)

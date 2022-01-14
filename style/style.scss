@@ -233,10 +233,8 @@ body {
   &__card {
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     align-items: center;
     padding-top: 64px;
-    //max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 
@@ -401,9 +399,6 @@ pre {
     }
 
     &__card {
-      //width: 339px;
-      //max-width: 255px;
-      //justify-content: start;
       align-items: flex-start;
     }
   }

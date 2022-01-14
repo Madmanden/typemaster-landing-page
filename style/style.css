@@ -191,6 +191,7 @@ body {
 
 .description__image-wrapper {
   width: 100%;
+  padding-left: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

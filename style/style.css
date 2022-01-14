@@ -47,6 +47,7 @@ body {
   background-color: #fff;
   line-height: 26px;
   color: #7b8bad;
+  overflow-x: hidden;
   font-family: Barlow, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -162,7 +163,6 @@ body {
 .hero__image {
   margin-top: 64px;
   width: calc(100% + 32px);
-  width: 540px;
   aspect-ratio: 1.125;
   background: url("../assets/mobile/image-keyboard.jpg") no-repeat;
   background-size: cover;
@@ -209,13 +209,12 @@ body {
 }
 
 .description__image-1 {
-  max-width: 255px;
-  width: 255px;
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 50vw;
+  margin-left: -24px;
   background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
   background-size: cover;
   background-color: #f16718;
@@ -354,7 +353,7 @@ pre {
 /***********************************
 *********** TABLET STYLE ***********
 ***********************************/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn {
     height: 58px;
     padding: 16px 27px;
@@ -423,7 +422,7 @@ pre {
     padding-top: 72px;
   }
   .description__header {
-    padding-right: 100px;
+    padding-right: 90px;
   }
   .features {
     display: -ms-grid;
@@ -493,6 +492,7 @@ pre {
   .hero__image {
     margin-right: 0;
     height: 480px;
+    width: 540px;
     max-width: unset;
   }
   .hero__grey-box {
@@ -550,6 +550,8 @@ pre {
     padding-top: 27px;
   }
   .features {
+    display: -ms-grid;
+    display: grid;
     padding-inline: 0;
     padding-top: 80px;
     width: 100%;

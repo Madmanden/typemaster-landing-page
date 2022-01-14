@@ -61,6 +61,7 @@ body {
   background-color: $white;
   line-height: 26px;
   color: $blue;
+  overflow-x: hidden;
 
   font: {
     family: Barlow, sans-serif;
@@ -154,7 +155,6 @@ body {
   &__image {
     margin-top: 64px;
     width: calc(100% + 32px);
-    width: 540px;
     aspect-ratio: 1.125;
     background: url("../assets/mobile/image-keyboard.jpg") no-repeat;
     background-size: cover;
@@ -182,13 +182,11 @@ body {
   }
 
   &__image-1 {
-    max-width: 255px;
-    width: 255px;
     position: relative;
     flex-grow: 1;
     height: 50vw;
+    margin-left: -24px;
     background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
-    //background-repeat: no-repeat;
     background-size: cover;
     background-color: #f16718;
     background-blend-mode: multiply;
@@ -307,7 +305,7 @@ pre {
 *********** TABLET STYLE ***********
 ***********************************/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn {
     height: 58px;
     padding: 16px 27px;
@@ -334,18 +332,18 @@ pre {
     &__body {
       padding-right: 69px;
     }
-  }
 
-  .hero__wrapper {
-    min-width: 408px;
-  }
+    &__wrapper {
+      min-width: 408px;
+    }
 
-  .hero__image {
-    height: 425px;
-    max-width: 478px;
-    margin-top: 0;
-    margin-right: $padding-tablet;
-    background-image: url("../assets/tablet/image-keyboard.jpg");
+    &__image {
+      height: 425px;
+      max-width: 478px;
+      margin-top: 0;
+      margin-right: $padding-tablet;
+      background-image: url("../assets/tablet/image-keyboard.jpg");
+    }
   }
 
   /// DESCRIPTION ///
@@ -377,7 +375,8 @@ pre {
     }
 
     &__header {
-      padding-right: 100px;
+      padding-right: 90px;
+    }
   }
 
   /// FEATURES ///
@@ -400,13 +399,13 @@ pre {
       text-align: left;
       padding-right: $padding-tablet;
     }
-  }
 
-  .features__card {
-    //width: 339px;
-    //max-width: 255px;
-    //justify-content: start;
-    align-items: flex-start;
+    &__card {
+      //width: 339px;
+      //max-width: 255px;
+      //justify-content: start;
+      align-items: flex-start;
+    }
   }
 
   .main-footer {
@@ -455,6 +454,7 @@ pre {
     &__image {
       margin-right: 0;
       height: 480px;
+      width: 540px;
       max-width: unset;
     }
 
@@ -515,6 +515,7 @@ pre {
   }
 
   .features {
+    display: grid;
     padding-inline: 0;
     padding-top: 80px;
     width: 100%;
